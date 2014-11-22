@@ -1,0 +1,28 @@
+{
+    "name": "ratchet/ratchet-frontend"
+  , "type": "library"
+  , "description": "PHP WebSocket library frontend for ratchet"
+  , "keywords": ["WebSockets", "Server", "Ratchet", "Sockets", "Frontend"]
+  , "homepage": "https://github.com/scholtz/ratchet-frontend/"
+  , "license": "MIT"
+  , "authors": [
+        {
+            "name": "Ludovit Scholtz"
+          , "email": "ludovit __at__ scholtz.sk"
+          , "role": "Developer"
+        }
+    ]
+  , "support": {
+        "forum":  "https://github.com/scholtz/ratchet-frontend/issues"
+      , "issues": "https://github.com/scholtz/ratchet-frontend/issues"
+    }
+  , "autoload": {
+        "psr-0": {
+            "RatchetFrontend": "src"
+        }
+    }
+  , "require": {
+        "php": ">=5.3.9"
+      , "cboden/Ratchet": "0.3.*"
+    }
+}
