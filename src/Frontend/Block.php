@@ -1,5 +1,5 @@
 <?php
-namespace Ratchet\Frontend;
+namespace RatchetFrontend\Frontend;
 
 class Block{
 	protected static $MustacheEngine = null;
