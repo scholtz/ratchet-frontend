@@ -8,7 +8,7 @@ class Block{
 	protected $clients = array();
 	public function __construct($template="", Array $data = array()){
 		$this->template = $template;
-		if(!$template){ $template = file_get_contents("templates/".get_class($this).".html");}
+		if(!$template){ $this->template = file_get_contents("templates/".get_class($this).".html");}
 		$this->data = $data;
 	}
 	public function setTemplate(String $template){
@@ -21,8 +21,9 @@ class Block{
 	}
 	public function get($namespace=""){
 		if(Block::$MustacheEngine == null) 
-			Block::$MustacheEngine = new Mustache_Engine;
-		return Block::$MustacheEngine->render($this->template,$this->data); 
+			Block::$MustacheEngine = new \Mustache_Engine;
+			
+		return Block::$MustacheEngine->render($this->template,$this->data[$namespace]); 
 	}
 	public function notify($namespace=""){
 		$R = array();
