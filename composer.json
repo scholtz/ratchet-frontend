@@ -1,5 +1,5 @@
 {
-    "name": "ratchet/RatchetFrontend"
+    "name": "ratchet/ratchet-frontend"
   , "type": "library"
   , "description": "PHP WebSocket library frontend for ratchet"
   , "keywords": ["WebSockets", "Server", "Ratchet", "Sockets", "Frontend"]
